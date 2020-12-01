@@ -74,3 +74,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+workflows:
+  flutter-package:
+    name: Flutter or Dart Package
+    environment:
+      flutter: dev
+    scripts:
+      - flutter packages pub get
+      - flutter test
